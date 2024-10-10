@@ -1,4 +1,3 @@
-<!-- src/routes/Home.svelte -->
 <script>
   import { Link } from 'svelte-routing';
 </script>

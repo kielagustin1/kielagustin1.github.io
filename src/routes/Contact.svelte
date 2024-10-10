@@ -1,5 +1,3 @@
-
-<!-- src/routes/Contact.svelte -->
 <script>
     import { Link } from 'svelte-routing';
     let name = '';
@@ -8,8 +6,6 @@
   
     const handleSubmit = () => {
       console.log('Form submitted with:', { name, email, message });
-      // You can add your form submission logic here
-      // Optionally reset form
       name = '';
       email = '';
       message = '';
