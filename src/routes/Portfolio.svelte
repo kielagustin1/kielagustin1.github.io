@@ -2,10 +2,10 @@
   import { Link } from 'svelte-routing';
   
   let projects = [
-    { name: 'Project 1', description: 'I made a pixelated moving mario through adobe.', image: '/images/Screenshot 2024-10-10 234830.jpg' },
-    { name: 'Project 2', description: 'First time i made navigation bars.', image: '/images/Screenshot 2024-10-11 004931.jpg' },
-    { name: 'Project 3', description: 'This is our first home page, we created a shoe website.', image: 'images/Screenshot 2024-10-11 005441.jpg' },
-    { name: 'Project 4', description: 'This is the shoes that are inside of the shoe website we made.', image: 'images/Screenshot 2024-10-11 005511.jpg' },
+    { name: 'First Pixelated Moving Art', description: 'I made a pixelated moving mario through adobe.', image: '/images/Screenshot 2024-10-10 234830.jpg' },
+    { name: 'First Navigation Bars', description: 'First time i made navigation bars.', image: '/images/Screenshot 2024-10-11 004931.jpg' },
+    { name: 'Shoe Home Page', description: 'This is our first home page, we created a shoe website.', image: 'images/Screenshot 2024-10-11 005441.jpg' },
+    { name: 'Inside Shoe Homepage', description: 'This is the shoes that are inside of the shoe website we made.', image: 'images/Screenshot 2024-10-11 005511.jpg' },
   ];
 </script>
 
