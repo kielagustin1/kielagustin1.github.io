@@ -1,3 +1,7 @@
+import 'flowbite/dist/flowbite.js';
+import 'flowbite-svelte';
+
+import './main.css';
 import App from './App.svelte';
 
 const app = new App({
