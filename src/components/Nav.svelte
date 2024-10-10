@@ -1,19 +1,23 @@
+<!-- src/components/Nav.svelte -->
 <script>
-    let links = [
-      { name: 'Home', href: '/' },
-      { name: 'Portfolio', href: '/portfolio' },
-      { name: 'About', href: '/about' },
-      { name: 'Contact', href: '/contact' }
-    ];
-  </script>
-  
-  <nav class="bg-blue-500 p-4 text-white">
-    <ul class="flex space-x-4">
-      {#each links as link}
-        <li>
-          <a href={link.href} class="hover:underline">{link.name}</a>
-        </li>
-      {/each}
+  import { Link } from 'svelte-routing';
+</script>
+
+<nav class="bg-gray-600 p-4 shadow-lg ">
+  <div class="container mx-auto">
+    <ul class="flex space-x-6">
+      <li>
+        <Link to="/" class="text-gray-300 font-semibold transition duration-300">Home</Link>
+      </li>
+      <li>
+        <Link to="/portfolio" class="text-gray-300 font-semibold transition duration-300">Portfolio</Link>
+      </li>
+      <li>
+        <Link to="/about" class="text-gray-300 font-semibold  transition duration-300">About</Link>
+      </li>
+      <li>
+        <Link to="/contact" class="text-gray-300 font-semibold transition duration-300">Contact</Link>
+      </li>
     </ul>
-  </nav>
-  
+  </div>
+</nav>
