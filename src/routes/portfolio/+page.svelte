@@ -5,7 +5,6 @@
       { name: 'First Pixelated Moving Art', description: 'I made a pixelated moving mario through adobe.', image: '/mario.jpg' },
       { name: 'First Navigation Bars', description: 'First time I made navigation bars.', image: '/nav.jpg' },
       { name: 'Shoe Home Page', description: 'This is our first home page, we created a shoe website.', image: '/shoe.jpg' },
-      { name: 'Inside Shoe Homepage', description: 'This is the shoes that are inside of the shoe website we made.', image: '/home.jpg' },
     ];
   </script>
   
