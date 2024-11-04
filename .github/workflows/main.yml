@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: v22.6.0
+          node-version: '22.6.0'  # Change this if you need a different Node version
 
       - name: Install dependencies
         run: npm install
@@ -29,13 +29,17 @@ jobs:
         run: npm run build
 
       - name: List files after build
-        run: ls -R
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Contents of the current directory:"
+          ls -R
 
       - name: Upload artifact
-        if: success() # Add additional conditions if needed
+        if: success()
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'build/'
+          path: 'build/'  # Ensure this matches your build output directory
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
