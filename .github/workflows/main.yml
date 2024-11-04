@@ -20,15 +20,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'  # Use a stable LTS version
-
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '22.6.0'  # Change this if you need a different Node version
 
       - name: Install dependencies
         run: npm install
@@ -45,14 +37,11 @@ jobs:
 
       - name: Upload artifact
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: build-artifact
-          path: 'build/'
+          path: 'build/'  # Ensure this matches your build output directory
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: build
+          token: ${{ secrets.GITHUB_TOKEN }}  # Removed unrecognized inputs
